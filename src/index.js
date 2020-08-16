@@ -124,6 +124,7 @@ import TextBox from './components/text-box';
 import TextInput from './components/text-input';
 import TimerDisplay from './components/timer-display';
 import VisualNovel from './components/visual-novel';
+import SortableInput from './components/sortable-input';
 
 Monogatari._components = [
 	AlertModal,
@@ -148,6 +149,7 @@ Monogatari._components = [
 	TextInput,
 	TimerDisplay,
 	VisualNovel,
+	SortableInput,
 ];
 
 /**
@@ -189,6 +191,7 @@ import Stop from './actions/Stop.js';
 import Vibrate from './actions/Vibrate.js';
 import Video from './actions/Video.js';
 import Wait from './actions/Wait.js';
+import SortableModal from './actions/SortableModal.js';
 
 Monogatari._actions = [
 	Canvas,
@@ -220,6 +223,7 @@ Monogatari._actions = [
 	Vibrate,
 	Video,
 	Wait,
+	SortableModal,
 
 	// Dialog must always go last
 	Dialog,

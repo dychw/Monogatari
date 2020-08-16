@@ -75,11 +75,29 @@ monogatari.characters ({
 	}
 });
 
+const dialogArrangeTeam = {
+	'Sortable': {
+		'Text': 'Team Arrangement',
+		'Roles': ['Team 1', 'Team 2','Team 3'],
+		'ChildGroup': [ { id: 'id_1' } ],
+		'Validation': function (input) {
+			return Object.keys(input[0]).length > 0;
+		},
+		'Ok': function (input) {
+			monogatari.storage().team = input;
+			alert(JSON.stringify(monogatari.storage().team));
+			return true;
+		},
+		'Warning': 'Team 1 needs to have at least one member.'
+	}
+};
+
 monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show scene #f7f6f6 with fadeIn',
 		'show notification Welcome',
+		dialogArrangeTeam,
 		{
 			'Input': {
 				'Text': 'What is your name?',

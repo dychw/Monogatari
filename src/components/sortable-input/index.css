@@ -1,0 +1,44 @@
+/**
+ * ===========================
+ * Text Input Component
+ * ===========================
+ */
+
+sortable-input {
+	div {
+		width: auto;
+		padding: 1rem;
+	}
+
+	ul {
+		height: 2rem;
+	}
+
+	li {
+		display: block;
+		background-color: #eee;
+		float: left;
+	}
+
+	small {
+		margin: 0.5rem auto;
+	}
+
+	button {
+		width: 3.5rem;
+		height: 2rem;
+		font-size: 1rem;
+		padding: 0;
+	}
+}
+
+/** Medium Screens, Tablets (601px) **/
+@media screen and (min-width: 37.56255em) {
+	sortable-input {
+
+		button {
+			width: 5rem;
+			height: 3rem;
+		}
+	}
+}
